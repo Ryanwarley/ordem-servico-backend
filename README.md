@@ -1,25 +1,99 @@
-# Sistema de Gestão de Ordens de Serviço
+# Sistema de Ordem de Serviço
 
-Projeto desenvolvido para a disciplina de Modelos, Métodos e Técnicas de Engenharia de Software - UniBH.
+Projeto desenvolvido em Java com Spring Boot para gerenciamento de ordens de serviço.
 
-## Objetivo
-Desenvolver uma solução back-end em Java para gerenciamento de ordens de serviço técnicas.
+## Tecnologias utilizadas
 
-## Problema
-O sistema busca melhorar o controle e acompanhamento de ordens de serviço técnicas, reduzindo problemas relacionados a processos manuais e falta de padronização.
-
-## Tecnologias
-- Java
+- Java 21
 - Spring Boot
-- H2 Database
-- JUnit
+- Spring Data JPA
+- Hibernate
 - Maven
+- Banco H2
+- Postman
+
+---
+
+## Funcionalidades
+
+- Criar ordem de serviço
+- Listar ordens de serviço
+- Buscar ordem por ID
+- Atualizar ordem
+- Deletar ordem
+- Validação de dados
+- Tratamento global de exceções
+
+---
 
 ## Estrutura do Projeto
 
-/backend -> código-fonte da aplicação  
-/docs -> documentação do projeto  
-/diagramas -> diagramas UML e modelagem  
+```bash
+controller
+service
+repository
+model
+dto
+exception
+enums
+```
 
-## Integrantes
-(colocar nomes)
+---
+
+## Endpoints
+
+### Criar Ordem de Serviço
+
+POST /ordens
+
+### Listar Todas
+
+GET /ordens
+
+### Buscar por ID
+
+GET /ordens/{id}
+
+### Atualizar
+
+PUT /ordens/{id}
+
+### Deletar
+
+DELETE /ordens/{id}
+
+---
+
+## Exemplo JSON
+
+```json
+{
+  "titulo": "Troca de cabo de rede",
+  "descricao": "Cliente está sem internet",
+  "prioridade": "ALTA"
+}
+```
+
+---
+
+## Como Executar
+
+1. Clonar o repositório
+2. Abrir no IntelliJ
+3. Executar a classe:
+
+```bash
+OrdemservicoApplication
+```
+
+4. A API estará disponível em:
+
+```bash
+http://localhost:8080
+```
+
+---
+
+## Autor
+
+Ryan Warley
