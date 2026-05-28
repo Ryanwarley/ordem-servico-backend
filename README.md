@@ -97,5 +97,3 @@ http://localhost:8080
 ## Autores
 
 Ryan Warley alves fernandes - 125111385720
-
-João Vittor Medeiros Araújo - 124116941
