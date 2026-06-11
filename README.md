@@ -74,22 +74,8 @@ DELETE /ordens/{id}
 }
 ```
 
----
-
-## Como Executar
-
-1. Clonar o repositório
-2. Abrir no IntelliJ
-3. Executar a classe:
-
 ```bash
 OrdemservicoApplication
-```
-
-4. A API estará disponível em:
-
-```bash
-http://localhost:8080
 ```
 
 ---
@@ -97,3 +83,4 @@ http://localhost:8080
 ## Autores
 
 Ryan Warley alves fernandes - 125111385720
+João Vittor Medeiros de Araújo - 124116941
