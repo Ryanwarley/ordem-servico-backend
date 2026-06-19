@@ -27,6 +27,9 @@ public class OrdemServicoService {
         ordemServico.setStatus(StatusOrdemServico.ABERTA);
         ordemServico.setDataCriacao(LocalDateTime.now());
 
+        
+
+
         return repository.save(ordemServico);
     }
 
@@ -63,6 +66,13 @@ public class OrdemServicoService {
     public void deletar(Long id) {
 
         OrdemServico ordemServico = buscarPorId(id);
+
+        @NotBlank(message = "O título é obrigatório")
+        private String titulo;
+
+
+        @NotBlank(message = "A descrição é obrigatória")
+         private String descricao;
 
         repository.delete(ordemServico);
     }
